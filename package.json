@@ -4,7 +4,9 @@
   "license": "MIT",
   "scripts": {},
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "@nx-extend/terraform": "^5.2.1"
+  },
   "devDependencies": {
     "@nx/js": "18.2.1",
     "@nx/workspace": "18.2.1",
