@@ -1,33 +1,33 @@
 {
-  "name": "sites-whill.uk",
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "projectType": "application",
-  "sourceRoot": "sites/whill.uk/src",
-  "targets": {
-    "package": {
-      "executor": "nx:run-commands",
-      "outputs": [],
-      "options": {
-        "commands": [
-          {
-            "command": "yarn --cwd sites/whill.uk build",
-            "forwardAllArgs": true
-          }
-        ]
-      }
+    "name": "sites-whill.uk",
+    "$schema": "../../node_modules/nx/schemas/project-schema.json",
+    "projectType": "application",
+    "sourceRoot": "sites/whill.uk/src",
+    "targets": {
+        "package": {
+            "executor": "nx:run-commands",
+            "outputs": [],
+            "options": {
+                "commands": [
+                    {
+                        "command": "yarn --cwd sites/whill.uk build",
+                        "forwardAllArgs": true
+                    }
+                ]
+            }
+        },
+        "serve": {
+            "executor": "nx:run-commands",
+            "outputs": [],
+            "options": {
+                "commands": [
+                    {
+                        "command": "yarn --cwd sites/whill.uk dev",
+                        "forwardAllArgs": true
+                    }
+                ]
+            }
+        }
     },
-    "serve": {
-      "executor": "nx:run-commands",
-      "outputs": [],
-      "options": {
-        "commands": [
-          {
-            "command": "yarn --cwd sites/whill.uk dev",
-            "forwardAllArgs": true
-          }
-        ]
-      }
-    }
-  },
-  "tags": []
+    "tags": []
 }

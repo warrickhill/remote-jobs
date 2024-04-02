@@ -7,7 +7,7 @@ $hightlight-color: #112f47;
 $contrast-color: #fff;
 
 // fonts
-@import url('https://fonts.googleapis.com/css2?family=Headland+One&family=Oranienbaum&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Headland+One&family=Oranienbaum&display=swap");
 
 h1,
 h2,
@@ -19,70 +19,73 @@ h6 {
     font-family: "Headland One", serif;
 }
 
-a, p, ul, li {
+a,
+p,
+ul,
+li {
     font-size: 0.75rem;
     color: $primary-color;
 }
 
 body {
-  font-family: "Oranienbaum", serif;
-  color: $primary-color;
+    font-family: "Oranienbaum", serif;
+    color: $primary-color;
 
-  .title {
-    @include padding(1rem);
-    @include flex-between;
-    .person {
-    }
-    .address {
-      text-align: right;
-    }
-  }
-
-  .profile {
-    @include padding(2rem);
-    @include flex-between(4rem);
-    background-color: $hightlight-color;
-    img {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-    }
-    p {
-      text-align: left;
-      color: $contrast-color;
-    }
-  }
-
-  .work {
-    @include padding(1rem);
-    h2 {
-      padding-bottom: 1rem;
-    }
-    .job {
-      border-top: $primary-color 1px solid;
-      margin-top: 1rem;
-      padding-top: 1rem;
-      @include flex(column, space-between, start, 2rem);
-      .key-points {
-        width: 100%;
-        @include flex-between(2rem);
-      }
-      .info {
-        width: 100%;
-        @include flex(row, space-between, start, 2rem);
-        .description {
-          width: 70%;
-          ul {
-            padding-left: 2rem;
-          }
+    .title {
+        @include padding(1rem);
+        @include flex-between;
+        .person {
         }
-        .skills {
-          text-align: right;
-          ul {
-            list-style: none;
-          }
+        .address {
+            text-align: right;
         }
-      }
     }
-  }
+
+    .profile {
+        @include padding(2rem);
+        @include flex-between(4rem);
+        background-color: $hightlight-color;
+        img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+        }
+        p {
+            text-align: left;
+            color: $contrast-color;
+        }
+    }
+
+    .work {
+        @include padding(1rem);
+        h2 {
+            padding-bottom: 1rem;
+        }
+        .job {
+            border-top: $primary-color 1px solid;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            @include flex(column, space-between, start, 2rem);
+            .key-points {
+                width: 100%;
+                @include flex-between(2rem);
+            }
+            .info {
+                width: 100%;
+                @include flex(row, space-between, start, 2rem);
+                .description {
+                    width: 70%;
+                    ul {
+                        padding-left: 2rem;
+                    }
+                }
+                .skills {
+                    text-align: right;
+                    ul {
+                        list-style: none;
+                    }
+                }
+            }
+        }
+    }
 }

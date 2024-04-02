@@ -1,14 +1,14 @@
-const eleventySass = require("eleventy-sass");
+const eleventySass = require("eleventy-sass")
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPlugin(eleventySass);
-  eleventyConfig.addPassthroughCopy("./src/assets");
+    eleventyConfig.addPlugin(eleventySass)
+    eleventyConfig.addPassthroughCopy("./src/assets")
 
-  return {
-    dir: {
-      input: "src",
-      output: "dist",
-    },
-    templateFormats: ["pug"],
-  };
-};
+    return {
+        dir: {
+            input: "src",
+            output: "dist",
+        },
+        templateFormats: ["pug"],
+    }
+}

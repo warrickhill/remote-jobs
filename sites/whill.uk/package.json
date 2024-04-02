@@ -1,19 +1,19 @@
 {
-  "name": "sites-whill.uk",
-  "version": "1.0.0",
-  "description": "",
-  "license": "MIT",
-  "author": "Warrick Hill",
-  "scripts": {
-    "build": "rm -rf ./dist && cross-env ELEVENTY_ENV=prod eleventy",
-    "clean": "cross-env ELEVENTY_ENV=dev eleventy clean",
-    "dev": "cross-env ELEVENTY_ENV=dev eleventy --serve",
-    "seed": "cross-env ELEVENTY_ENV=seed eleventy",
-    "start": "yarn dev"
-  },
-  "dependencies": {
-    "@11ty/eleventy": "^2.0.1",
-    "cross-env": "^7.0.3",
-    "eleventy-sass": "^2.2.4"
-  }
+    "name": "sites-whill.uk",
+    "version": "1.0.0",
+    "description": "",
+    "license": "MIT",
+    "author": "Warrick Hill",
+    "scripts": {
+        "build": "rm -rf ./dist && cross-env ELEVENTY_ENV=prod eleventy",
+        "clean": "cross-env ELEVENTY_ENV=dev eleventy clean",
+        "dev": "cross-env ELEVENTY_ENV=dev eleventy --serve",
+        "seed": "cross-env ELEVENTY_ENV=seed eleventy",
+        "start": "yarn dev"
+    },
+    "dependencies": {
+        "@11ty/eleventy": "^2.0.1",
+        "cross-env": "^7.0.3",
+        "eleventy-sass": "^2.2.4"
+    }
 }
