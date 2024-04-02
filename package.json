@@ -5,11 +5,12 @@
   "scripts": {},
   "private": true,
   "dependencies": {
-    "@nx-extend/terraform": "^5.2.1"
-  },
-  "devDependencies": {
+    "@nx-extend/terraform": "^5.2.1",
     "@nx/js": "18.2.1",
     "@nx/workspace": "18.2.1",
     "nx": "18.2.1"
-  }
+  },
+  "workspaces": [
+    "sites/*"
+  ]
 }
